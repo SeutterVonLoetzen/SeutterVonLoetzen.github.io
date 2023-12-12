@@ -13,26 +13,38 @@
 		
 	<!-- Formatierungs-Angaben "text/css" für das gesamte Dokument -->
 	<style> 
-		/* responsive two-column layout using css grid, based on: 
+		/*	Die Darstellung des Wappens folgt der gewünschten Textbreite links: 17.0rem
+			Die Abstände eingerechnet beginnt die rechte Spalte bei 18.5rem  
+			Das Format des Wappens.jpg: 306x430 (Pixel?) 
+			Bildbreite: 17.0rem - Ränder 0.8rem = 16.2rem 
+			Bildhöhe: 16.2rem x 430/306 = 22.8rem; + Ränder 0.8rem = 23.6rem  */
+			
+		/*	responsive two-column layout using css grid, based on: 
 			https://matthewjamestaylor.com/2-column-layouts#responsive-2-column-grid  */
-		main { display:block; }
-		main > * { width:100%; }
+		main {display:block; }
+		main > * {width:100%; }
 		@media (min-width:36rem) {
-			main { display:grid; grid-template-columns: 18.5rem 1fr; }
-			header, footer { grid-column: 1 / -1; } }				
+			main {display:grid; grid-template-columns: 18.5rem 1fr; }
+			header, footer {grid-column: 1 / -1; } }				
 		
-		body {max-width:56rem; font-family:Arial; color:black; 
+		body {max-width:56rem; font-family:Arial; color:black; text-decoration:none; 
 			text-align:left; font-style:normal; font-size:1.0rem; line-height:1.4; 
 			padding-left:1rem; padding-right:1rem; position:relative; }  
 		header {text-align:center; }
 		footer {text-align:left; font-style:italic; font-size:0.8rem; line-height:1.4; }
 		
-		.spalte {width:17rem; }
-		.box {padding-left:0.6rem; padding-right:0.6rem; border: 0.15rem solid red; }
+		.spalte {width:17.0rem; }
 		.wappen {width:16.2rem; height:22.8rem; border: 0.4rem solid black; }
+		.box {padding-left:0.6rem; padding-right:0.6rem; border: 0.15rem solid red; }
 		.notiz {font-style:normal; font-size:0.8rem; line-height:1.4; text-align:justify; }
 		.liste {padding-left:1rem; }
-				
+		
+		.button {background-color:#fff28e; color:black; font-weight:normal; text-decoration:none; 
+			border-radius:0.75rem; border:0.15rem solid black; padding:0.3rem; 
+			margin-left:15%; width:65%; text-align:center; display:inline-block; cursor: pointer; }
+		
+		a:hover, summary:hover {background-color:yellow; }
+		
 		h1 {font-size:2.5rem; line-height:1.1; margin-top:3.0rem; margin-bottom:1.6rem; font-weight:bold; }
 		h4 {font-size:1.0rem; line-height:1.1; margin-top:1.5rem; margin-bottom:1.5rem; font-weight:bold; }
 		h5 {text-align:center; text-decoration:underline; font-weight:normal; 
@@ -51,8 +63,7 @@
 			
 			<div class="box"> <!-- Gerahmte Box in linker Spalte -->
 				<h5>Aktuelles Ereignis</h5>
-				<p>a) Konzert und Lesung: 75 Jahre Allgemeine Erklärung der Menschenrechte; am Fr. 8. Dez. um 19 Uhr in der Villa Elena, mit Anna Zimre - Viola da Gamba, Michael Veit - Barockcello, Silas Bischof - Theorbe, Peter Veit - Sprecher. Bitte um Anmeldung bei Dorli oder Ulrike Hagen.</p>
-				<p>b) Führung für Familienmitglieder durch die derzeit leer stehende Seutter-Villa in Wien-Hacking am Mo. 11. Dez., 10 Uhr. Bitte um Anmeldung bei Reingard Rauch.</p> 
+				<p>Wir wünschen allen Besuchern eine fröhliche und gesegnete Advents- und Weihnachtszeit!</p>
 			</div> <!-- Ende gerahmte Box -->			
 			<br>
 			
@@ -120,7 +131,7 @@
 		
 		<section> <!-- Rechte Spalte -->	
 			
-			<span><strong>Heißt Du</strong> Seutter, von Seutter oder Seutter v.&nbsp;Loetzen?<br>
+			<span><strong>Heißt Du</strong> Seutter, Von Seutter oder Seutter v.&nbsp;Loetzen?<br>
 			Oder bist Du eine oder einer der vielen Seutter-Nachkommen mit einem anderen Namen?</span>
 			
 			<p>Wenn Du Kontakt aufnehmen oder von familien-intern gehaltenen Ereignissen und Schriftstücken zur Geschichte und Genealogie der Familie erfahren möchtest, so schreibe doch bitte ein E-Mail an die untenstehende Kontakt-Adresse. Wir wollen uns bemühen, Dir innerhalb weniger Tage zu antworten.</p>
@@ -138,7 +149,7 @@
 			
 			<h4>Etwas zum Namen:</h4>
 				<p>Bis in die Neuzeit hinein gab es viele Schreibweisen des Namens <em>Seutter</em>. Daher ist anzunehmen, dass es entfernte Verwandte gibt, deren Name anders lautet, zum Beispiel: <em>Seuter, Seiter, Sewter, Soiter, Suiter, Sutor, Sutter, ...</em><br>
-				Die Verwandten in den USA nennen sich <em>von&nbsp;Seutter</em>.</p>
+				Die Verwandten in den USA nennen sich <em>Von&nbsp;Seutter</em>.</p>
 				<p class="pText"><em>Loetzen</em>, bzw. <em>Lötzen</em>, war ein Landgut und Schlössl im Umland von Kempten, das den Seutter in Kempten zu Lehen gegeben wurde. Eine <em>Letze</em> oder <em>Letzen</em> im Allgäu des 13. Jhdts war eine kleine wehrtechnische Anlage, zum Beispiel ein Grenzverhau oder eine Wegsperre.</p> 
 			
 			<h4>Kontakt und Impressum:</h4>
@@ -146,8 +157,11 @@
 				<p>Anton Seutter&nbsp;v.&nbsp;Loetzen, Nürnberger&nbsp;Straße&nbsp;176, D-93059&nbsp;Regensburg<br>
 				E-Mail: <a href="mailto:kontakt@seuttervonloetzen.de">kontakt@seuttervonloetzen.de</a></p>
 				</address>
+			
+			<a href="Folgeseite.html" class="button">Zu weiteren Seiten</a>
+			
 		</section> <!-- Ende rechte Spalte -->
-	</main>
+	</main> <!-- Ende beide Spalten -->
 	
 	<footer> <!-- Fußbereich -->
 		<hr>
@@ -158,5 +172,6 @@
 		(Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International).
 		</p>
 	</footer>
+	
 </body>
 </html>

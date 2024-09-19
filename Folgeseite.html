@@ -38,13 +38,19 @@
 			margin-left:1.6rem; text-indent:-1.6rem; } 
 				
 		/*	Horizontal-Liste der Navigations-Buttons */
-		.navigList {list-style-type:none; overflow:hidden; }
+		.navigList {list-style-type:none; overflow:hidden; float:left; margin-left:-1.5rem; }
 		.button {background-color:#fff28e; color:black; font-weight:normal; text-decoration:none; 
 			border-radius:0.75rem; border:0.15rem solid black; padding:0.3rem 0.6rem; 
-			margin-top:0rem; margin-bottom:0.4rem; margin-left:-1.5rem; margin-right:2.5rem; 
+			margin-top:0rem; margin-right:2.5rem; margin-bottom:0.4rem; margin-left:-1.5rem; 
 			float:left; text-align:center; display:inline-block; cursor: pointer; }
 		
-		a:hover {background-color:yellow; }
+		<!-- 
+		.button {background-color:#fff28e; color:black; font-weight:normal; text-decoration:none; 
+			border-radius:0.75rem; border:0.15rem solid black; padding:0.3rem; 
+			margin-left:15%; width:65%; text-align:center; display:inline-block; cursor: pointer; } 
+		-->
+		
+		a:hover {background-color:#fff28e; }
 		
 		/*	Listen der verschiedenen Themen und zugehörige Links */
 		ul {padding-left:1rem; } 
@@ -71,12 +77,12 @@
 		<section> 
 			<h1>Die SEUTTER und die SEUTTER von LOETZEN</h1>
 			<ul class="navigList">
-				<li><a href="index.html" class="button">Home</a></li>
-				<!-- 
-				<li><a href="Homepage.html" class="button">Weitere Seite</a></li>
-				<li><a href="Homepage.html" class="button">Weitere Seite</a></li>
-				<li><a href="Homepage.html" class="button">Weitere Seite</a></li>
-				<li><a href="Homepage.html" class="button">Weitere Seite</a></li>
+				<li><a href="https://seuttervonloetzen.de/index.html" class="button">Home</a></li>
+				<!--
+				<li><a href="https://seuttervonloetzen.de/index.html" class="button">Folgeseite</a></li>
+				<li><a href="Folgeseite.html" class="button">Weitere Seite</a></li>
+				<li><a href="Folgeseite.html" class="button">Weitere Seite</a></li>
+				<li><a href="Folgeseite.html" class="button">Weitere Seite</a></li>
 				-->
 			</ul>
 		</section>	
@@ -85,9 +91,8 @@
 	<main> 	
 		<hr>
 		<h2>Einige informative Links</h2>
-		<!-- <h3>(Klaus-Christoph Harms, im Dez. 2023)</h3> -->
 		
-		<p>Im Internet wird Allerlei berichtet, auch über die Seutter von Loetzen. Es gibt sogar Seiten, die anscheinend absichtlich einen falschen Eindruck erwecken wollen. Von vertrauenswürdig erscheinenden und öffentlich zugänglichen Seiten haben wir die folgende Auswahl getroffen, aber auch diesen Links ist leider mit Vorsicht zu begegnen, manches stimmt einfach nicht! </p>
+		<p>Im Internet wird Allerlei berichtet, auch über die Seutter von Loetzen. Es gibt sogar Seiten, die anscheinend absichtlich einen falschen Eindruck erwecken wollen. Von vertrauenswürdig erscheinenden und öffentlich zugänglichen Seiten haben wir die folgende Auswahl getroffen, aber auch diesen Links ist leider mit Vorsicht zu begegnen, manches stimmt einfach nicht!</p>
 		
 		<p class="hinweis"><u>Bitte zu beachten</u>: Die hier angegebenen Websites haben wir kritisch betrachtet! Wir weisen aber darauf hin, dass der Aufruf eines Hyperlinks immer auf eigenes Risiko erfolgt, da er i.A. einen Austausch von Inhalten und Cookies zwischen dem aufrufenden Rechner und dem Host der aufgerufenen Seite bewirkt, dessen Rechtmäßigkeit und Auswirkungen von den Autoren der Seite hier nicht beeinflusst und nicht kontrolliert werden können.</p>
 		
@@ -102,26 +107,22 @@
 			<li>Wappenfigur Roßmaulkorb, irrtümlich Feuerkorb genannt: 
 			<a href="https://de.wikipedia.org/wiki/Feuerkorb_(Heraldik)" target="_blank">Wikipedia</a></li>
 			
-			<li>Patriziat Kempten (Bürgerstube): 
-			<a href="https://de.wikipedia.org/wiki/Patriziat_(Kempten)" target="_blank">Wikipedia</a></li>
-			
-			<li>Patriziat Lindau (Zum Sünfzen): 
-			<a href="https://de.wikipedia.org/wiki/Zum_Sünfzen" target="_blank">Wikipedia</a></li>
-			
-			<li>Patriziat Ulm: 
-			<a href="https://de.wikipedia.org/wiki/Patriziat_(Ulm)" target="_blank">Wikipedia</a></li>
+			<li>Genealogische Datenbank <q>Roglo</q>:
+			<a href="https://roglo.eu/roglo?lang=de;p=gordian;n=seutter;oc=1" target="_blank">Gordian SEUTTER (1480/1482-1534)</a></li>
 		</ul>
 		
 		<h4>Zu den Anfängen in und bei Kempten</h4>
 		<ul>
 			<li>Gordian SEUTTER (1480/1482-1534) und "der große Kauf": 
 			<a href="https://de.wikipedia.org/wiki/Gordian_Seuter" target="_blank">Wikipedia</a>
-			; <a href="https://roglo.eu/roglo?lang=de;p=gordian;n=seutter;oc=1" target="_blank">Genealogische Datenbank <q>Roglo</q></a>
 			; <a href="https://de.wikipedia.org/wiki/Kempten_(Allgäu)" target="_blank">Wikipedia (Kempten)</a>
 			; <a href="https://de.wikipedia.org/wiki/Fürststift_Kempten" target="_blank">Wikipedia (Fürststift Kempten)</a>
-			; <a href="https://de.wikipedia.org/wiki/Liste_der_nach_Personen_benannten_Straßen_und_Plätze_in_Kempten_(Allgäu)" target="_blank">Wikipedia (Seuterstraße)</a></li>
+			; <a href="https://de.wikipedia.org/wiki/Liste_der_nach_Personen_benannten_Straßen_und_Plätze_in_Kempten_(Allgäu)" target="_blank">Wikipedia (Seuterstraße, Kempten)</a></li>
 			
-			<li>Schloss Letten (Letzen) bei Kempten: 
+			<li>Patriziat Kempten (Bürgerstube): 
+			<a href="https://de.wikipedia.org/wiki/Patriziat_(Kempten)" target="_blank">Wikipedia</a></li>
+
+			<li>Schloss Letten (Letzen, Loetzen) bei Kempten: 
 			<a href="https://de.wikipedia.org/wiki/Letten_(Kempten)" target="_blank">Wikipedia</a></li>
 			
 			<li>Schloss Lenzfried bei Kempten: 
@@ -135,7 +136,7 @@
 			<a href="https://de.m.wikipedia.org/wiki/Datei:Zollikofer-Seutter_von_Kempten-Allianzwappen.jpg" target="_blank">Wikipedia</a></li>
 		</ul>
 		
-		<h4>Zur Ulmer Linie der SEUTTER v. LOETZEN (auch Freiherrn; erloschen im Mannesstamm)</h4>
+		<h4>Zur Ulmer Linie der SEUTTER v. LOETZEN, auch Freiherrn</h4>
 		<ul>
 			<li>Johann (Hans) Conrad Reichsfreiherr SEUTTER v. LÖTZEN auf Atzelsberg und Steinach (1657-1730) Diplomat: <a href="https://recherche.smb.museum/detail/874633/porträt-des-johann-conrad-seutter-von-lötzen-d--j-" target="_blank">Staatliche Museen zu Berlin</a></li>  
 			
@@ -144,6 +145,9 @@
 			; <a href="https://www.burgen-web.de/atzelsberg.pdf" target="_blank">Burgen und Schlösser in Bayern</a>
 			; <a href="https://kommais.wisski.data.fau.de/wisski/navigate/2136/view" target="_blank">FAU Erlangen-Nürnberg</a></li>
 			
+			<li>Patriziat Ulm: 
+			<a href="https://de.wikipedia.org/wiki/Patriziat_(Ulm)" target="_blank">Wikipedia</a></li>
+
 			<li>Johann Georg Freiherr SEUTTER v. LÖTZEN (1769-1833) Forst- und Finanzmann: 
 			<a href="https://www.deutsche-biographie.de/sfz80091.html" target="_blank">Allg. Deutsche Biographie</a></li>  
 
@@ -160,10 +164,15 @@
 			<a href="https://www.zeit-des-gedenkens.de/traueranzeige/elisabethfreiinseutter-vonloetzen/anzeigen" target="_blank">Traueranzeige</a></li>
 		</ul>
 		
-		<h4>Zu den Nürnberger Linien der SEUTTER v. LOETZEN (erloschen im Mannesstamm)</h4>
+		<h4>Zu den Nürnberger Linien der SEUTTER v. LOETZEN</h4>
 		<ul>
 			<li>Johann Paul von Seutter'sche Stiftung: 
 			<a href="https://www.bavarikon.de/object/bav:BSB-MDZ-00000BSB10387249?p=319" target="_blank">bavarikon (Nürnbergische Münz-Belustigungen ...)</a></li>
+			
+			<li>Seutter-Garten in "Nürnbergische Hesperides":
+			<a href="https://de.wikipedia.org/wiki/Hesperidengärten" target="_blank">Wikipedia</a>
+			; <a href="https://www.bavarikon.de/object/bav:BSB-ANG-0000HSS000MWK007" target="_blank">bavarikon (Nürnbergische Hesperides)</a>
+			; <a href="https://de.wikipedia.org/wiki/Johann_Christoph_Volkamer" target="_blank">Wikipedia (Johann Christoph Volkamer)</a></li>
 			
 			<li>Geschichte der Eimmart-Sternwarte (PDF):
 			<a href="https://www.astronomie-nuernberg.de/geschichte/eimmart/RB_Spezial-Eimmart.pdf" target="_blank">Astronomie Nürnberg (Regiomontanus Bote)</a></li>
@@ -173,6 +182,9 @@
 		<ul>
 			<li>Johann Michael (I.) SEUTTER von LOETZEN (1682-1768) Bürgermeister; Erbauer des Cavazzen: 
 			<a href="https://roglo.eu/roglo?lang=de;p=johann+michael;n=seutter+von+loetzen;oc=1" target="_blank">Genealogische Datenbank <q>Roglo</q></a></li>
+			
+			<li>Patriziat Lindau (Zum Sünfzen): 
+			<a href="https://de.wikipedia.org/wiki/Zum_Sünfzen" target="_blank">Wikipedia</a></li>
 			
 			<li>Haus zum Cavazzen (Museum der Stadt Lindau): 
 			<a href="https://de.wikipedia.org/wiki/Stadtmuseum_Lindau" target="_blank">Wikipedia</a>
@@ -203,7 +215,7 @@
 			<a href="https://trauer.nw.de/traueranzeige/rainer-gordian-seutter-von-loetzen" target="_blank">Traueranzeige</a></li>
 		</ul>
 		
-		<h4>Zu den SEUTTER v. LOETZEN in Österreich (aus der Lindauer Linie)</h4>
+		<h4>Zu den SEUTTER v. LOETZEN in Österreich (Ast der Lindauer Linie)</h4>
 		<ul>
 			<li>Eduard SEUTTER von LOETZEN (1809-1879) Kaufmann und Bankier in Prag: 
 			<a href="https://www.biographien.ac.at/oebl_12/201.pdf" target="_blank">Österr. Biograph. Lexikon</a></li>
@@ -272,7 +284,7 @@
 			<a href="https://de.wikipedia.org/wiki/Christoph_Lieben-Seutter" target="_blank">Wikipedia</a></li>	
 		</ul>
 
-		<h4>Zu den Von SEUTTER in den USA (aus der Lindauer Linie)</h4>
+		<h4>Zu den Von SEUTTER in den USA (Ast der Lindauer Linie)</h4>
 		<ul>
 			<li>Elisaeus Von SEUTTER in Jackson, Mississippi (1827-1901) Juwelier und Photograph: 
 			<a href="https://en.wikipedia.org/wiki/E._von_Seutter" target="_blank">Wikipedia</a>
@@ -288,7 +300,7 @@
 			<a href="https://www.tributearchive.com/obituaries/22730104/michael-carl-von-seutter" target="_blank">Nachruf</a></li>
 		</ul>
 
-		<h4>Zur Augsburger Künstlerfamilie SEUTER (auch: SEUTTER; vermutlich nicht verwandt)</h4>
+		<h4>Zur Augsburger Künstlerfamilie SEUTER, auch SEUTTER (nicht verwandt)</h4>
 		<ul>	
 			<li>Die Brüder Bartholomäus SEUTER (1678-1754) und Abraham SEUTER (1699-1747) Kunsthandwerker und Verleger: 
 			<a href="https://de.wikipedia.org/wiki/Bartholomäus_Seutter" target="_blank">Wikipedia</a></li>

@@ -30,6 +30,7 @@
 		body {max-width:56rem; font-family:Arial; color:black; 
 			text-align:left; font-style:normal; font-size:0.8rem; line-height:1.4; 
 			padding-left:1rem; padding-right:1rem; position:relative; }  
+		
 		footer {text-align:left; font-style:italic; font-size:0.8rem; line-height:1.4; }
 		
 		.wappen {width:6.7rem; height:9.4rem; border:0.15rem solid black; } 
@@ -37,20 +38,15 @@
 		.hinweis {font-style:italic; font-size:0.8rem; line-height:1.4; text-align:left; 
 			margin-left:1.6rem; text-indent:-1.6rem; } 
 				
-		/*	Horizontal-Liste der Navigations-Buttons */
-		.navigList {list-style-type:none; overflow:hidden; float:left; margin-left:-1.5rem; }
-		.button {background-color:#fff28e; color:black; font-weight:normal; text-decoration:none; 
-			border-radius:0.75rem; border:0.15rem solid black; padding:0.3rem 0.6rem; 
-			margin-top:0rem; margin-right:2.5rem; margin-bottom:0.4rem; margin-left:-1.5rem; 
-			float:left; text-align:center; display:inline-block; cursor: pointer; }
+		/*	Horizontale Navigations-Leiste */
+		.navbar {padding:0; 
+			margin-top:1.3rem; margin-right:0rem; margin-bottom:1.3rem; margin-left:0rem; }  
+		.navbutton {background-color:#fff28e; color:black; font-weight:normal; 
+			border-radius:0.75rem; border:0.15rem solid black; 
+			margin-left:1.0rem; padding:0.3rem 0.6rem; }
+		.navtxtstyle {color:black; text-decoration:none; }
 		
-		<!-- 
-		.button {background-color:#fff28e; color:black; font-weight:normal; text-decoration:none; 
-			border-radius:0.75rem; border:0.15rem solid black; padding:0.3rem; 
-			margin-left:15%; width:65%; text-align:center; display:inline-block; cursor: pointer; } 
-		-->
-		
-		a:hover {background-color:#fff28e; }
+		a:hover, summary:hover {background-color:#fff28e; }
 		
 		/*	Listen der verschiedenen Themen und zugehörige Links */
 		ul {padding-left:1rem; } 
@@ -76,15 +72,10 @@
 		</section>
 		<section> 
 			<h1>Die SEUTTER und die SEUTTER von LOETZEN</h1>
-			<ul class="navigList">
-				<li><a href="https://seuttervonloetzen.de/index.html" class="button">Home</a></li>
-				<!--
-				<li><a href="https://seuttervonloetzen.de/index.html" class="button">Folgeseite</a></li>
-				<li><a href="Folgeseite.html" class="button">Weitere Seite</a></li>
-				<li><a href="Folgeseite.html" class="button">Weitere Seite</a></li>
-				<li><a href="Folgeseite.html" class="button">Weitere Seite</a></li>
-				-->
-			</ul>
+			<p class="navbar">
+				<span class="navbutton">
+					<a class="navtxtstyle" href="https://seuttervonloetzen.de/index.html"> Home </a></span>
+			</p>
 		</section>	
 	</header>
 	
@@ -98,7 +89,7 @@
 		
 		<h4>Allgemeines</h4> <!-- ; <a href="..." target="_blank">Wikipedia</a> -->
 		<ul>
-			<li>Die Seuter (auch: Seutter) Ritter und Patrizier in und um Kempten: 
+			<li>Seuter (Familie), Ritter und Patrizier in und um Kempten: 
 			<a href="https://de.wikipedia.org/wiki/Seuter_(Familie)" target="_blank">Wikipedia</a></li>
 			
 			<li>Seutter von Loetzen (Adelsgeschlecht): 
@@ -117,7 +108,7 @@
 			<a href="https://de.wikipedia.org/wiki/Gordian_Seuter" target="_blank">Wikipedia</a>
 			; <a href="https://de.wikipedia.org/wiki/Kempten_(Allgäu)" target="_blank">Wikipedia (Kempten)</a>
 			; <a href="https://de.wikipedia.org/wiki/Fürststift_Kempten" target="_blank">Wikipedia (Fürststift Kempten)</a>
-			; <a href="https://de.wikipedia.org/wiki/Liste_der_nach_Personen_benannten_Straßen_und_Plätze_in_Kempten_(Allgäu)" target="_blank">Wikipedia (Seuterstraße, Kempten)</a></li>
+			; <a href="https://de.wikipedia.org/wiki/Liste_der_nach_Personen_benannten_Straßen_und_Plätze_in_Kempten_(Allgäu)" target="_blank">Wikipedia (Seuterstraße in Kempten)</a></li>
 			
 			<li>Patriziat Kempten (Bürgerstube): 
 			<a href="https://de.wikipedia.org/wiki/Patriziat_(Kempten)" target="_blank">Wikipedia</a></li>
@@ -188,11 +179,15 @@
 			
 			<li>Haus zum Cavazzen (Museum der Stadt Lindau): 
 			<a href="https://de.wikipedia.org/wiki/Stadtmuseum_Lindau" target="_blank">Wikipedia</a>
+			; <a href="https://de.wikipedia.org/wiki/Lindau_(Bodensee)" target="_blank">Wikipedia (Lindau)</a>
 			; <a href="https://www.lindau.de/addresses/stadtmuseum-haus-zum-cavazzen/" target="_blank">Stadt Lindau</a>
 			; <a href="https://www.kultur-lindau.de/museum/cavazzensanierung" target="_blank">Kultur-Lindau</a>
 			; <a href="https://www.denkmalschutz.de/denkmal/haus-zum-cavazzen.html" target="_blank">Deutsche Stiftung Denkmalschutz</a>
 			; <a href="https://www.denkmalnetzbayern.de/erhaltenswerte-denkmaeler-bauten-gaerten/gefaehrdet/haus-zum-cavazzen-in-lindau" target="_blank">Denkmalnetz Bayern</a>
 			; <a href="https://www.bavarikon.de/object/bav:BSB-CMS-0000000000001105" target="_blank">Bavarikon</a></li>
+			
+			<li>Anna Sibylla und Euphrosine Regine NEUBRONNER: 
+			<a href="https://de.wikipedia.org/wiki/Neubronner_(Geschlecht)" target="_blank">Wikipedia (Neubronner)</a></li>
 			
 			<li>Villa Elena in Bad Schachen bei Lindau (Bodensee): 
 			<a href="https://de.wikipedia.org/wiki/Liste_der_Baudenkmäler_in_Lindau_(Bodensee)" target="_blank">Wikipedia (Baudenkmäler Lindau)</a>
@@ -204,23 +199,23 @@
 			<li>Wilhelm SEUTTER von LOETZEN (1901-1982) Bayerischer Monarchist: 
 			<a href="https://de.wikipedia.org/wiki/Wilhelm_Seutter_von_Lötzen" target="_blank">Wikipedia</a></li>
 			
-			<li>Ruth SEUTTER von LOETZEN (1925-2012) Schauspielerin in Regensburg: 
+			<li>Ruth SEUTTER von LOETZEN (1925-2012) Schauspielerin: 
 			<a href="https://de.wikipedia.org/wiki/Ruth_Seutter_von_Loetzen" target="_blank">Wikipedia</a>
 			; <a href="https://www.mittelbayerische-trauer.de/traueranzeige/ruthseuttervon-loetzen" target="_blank">Traueranzeige</a></li>
 			
-			<li>Maia SEUTTER von LOETZEN (1927-2019) aus Lindau:
+			<li>Maia SEUTTER von LOETZEN (1927-2019) vom Rosenhof in Lindau-Hoyren:
 			<a href="https://trauer.schwaebische.de/traueranzeige/maia-seutter-von-loetzen" target="_blank">Traueranzeige</a></li>
 			
 			<li>Rainer Gordian SEUTTER von LOETZEN (1942-2023):
 			<a href="https://trauer.nw.de/traueranzeige/rainer-gordian-seutter-von-loetzen" target="_blank">Traueranzeige</a></li>
 		</ul>
 		
-		<h4>Zu den SEUTTER v. LOETZEN in Österreich (Ast der Lindauer Linie)</h4>
+		<h4>Zu den SEUTTER v. LOETZEN in Österreich (ein Ast der Lindauer Linie)</h4>
 		<ul>
 			<li>Eduard SEUTTER von LOETZEN (1809-1879) Kaufmann und Bankier in Prag: 
 			<a href="https://www.biographien.ac.at/oebl_12/201.pdf" target="_blank">Österr. Biograph. Lexikon</a></li>
 			
-			<li>Carl Friedrich SEUTTER von LOETZEN (1820-1892) Gründer der Fa. Seutter & Co.: 
+			<li>Carl Friedrich SEUTTER von LOETZEN (1820-1892) Gründer der Fa. Seutter & Co. in Wien: 
 			<a href="https://de.wikipedia.org/wiki/Carl_Friedrich_Seutter_von_Loetzen" target="_blank">Wikipedia</a>
 			; <a href="https://www.biographien.ac.at/oebl_12/200.pdf" target="_blank">Österr. Biograph. Lexikon</a>
 			; <a href="https://austria-forum.org/af/AustriaWiki/Carl_Friedrich_Seutter_von_Loetzen" target="_blank">Austria-Forum</a>
@@ -239,13 +234,13 @@
 			<a href="https://www.biographien.ac.at/oebl_12/200.pdf" target="_blank">Österr. Biograph. Lexikon</a></li>
 			
 			<li>Baumwollspinnerei Seutter & Co. in Eggendorf: 
-			<a href="https://de.wikipedia.org/wiki/Eggendorf_(Niederösterreich)" target="_blank">Wikipedia</a>
+			<a href="https://de.wikipedia.org/wiki/Eggendorf_(Niederösterreich)" target="_blank">Wikipedia (Eggendorf)</a>
 			; <a href="https://www.schlot.at/2008/12/16/borckenstein-wb-eggendorf/" target="_blank">www.schlot.at</a>
-			; <a href="https://eggendorf-noe.at/wp-content/uploads/2016/12/gemeindezeitung_extra_10_2009.pdf" target="_blank">Gemeinde Eggendorf (2009)</a>
+			; <a href="https://eggendorf-noe.at/wp-content/uploads/2016/12/gemeindezeitung_extra_10_2009.pdf" target="_blank">Gemeindezeitung Eggendorf 2009 (PDF)</a>
 			; <a href="https://www.gedaechtnisdeslandes.at/orte/ort/eggendorf" target="_blank">Gedächtnis des Landes - Eggendorf</a></li>
 			
 			<li>Baumwollspinnerei G. Borckenstein & Sohn in Neudau: 
-			<a href="https://de.wikipedia.org/wiki/Borckenstein_GmbH" target="_blank">Wikipedia (Borckenstein)</a>
+			<a href="https://de.wikipedia.org/wiki/Borckenstein_GmbH" target="_blank">Wikipedia (Borckenstein GmbH)</a>
 			; <a href="https://de.wikipedia.org/wiki/Neudau" target="_blank">Wikipedia (Neudau)</a></li>
 			
 			<li>Johann (Hans) Konrad SEUTTER von LOETZEN (1864-1907) Bezirkshauptmann: 
@@ -259,8 +254,8 @@
 			; <a href="https://de.wikipedia.org/wiki/Pfarrkirche_Leutschach" target="_blank">Wikipedia (Pfarrkirche Leutschach)</a></li>
 			
 			<li>Hans-Adam SEUTTER von LOETZEN (1897-1934) Unternehmer in Kärnten: 
-			<a href="https://www.seeboden.at/fileadmin/dateien/gemeinde/Chronik/Der_Tod_von_Seutter/Der_Tod_von_Hans_-_Adam_Seutter.pdf" target="_blank">Seeboden Gemeinde-Chronik</a>
-			; <a href= "https://www.seeboden.at/fileadmin/_migrated/content_uploads/Interview_mit_Burgstaller_Franz_Dr_02.pdf" target="_blank">Interview</a>
+			<a href="https://www.seeboden.at/fileadmin/dateien/gemeinde/Chronik/Der_Tod_von_Seutter/Der_Tod_von_Hans_-_Adam_Seutter.pdf" target="_blank">Seeboden Gemeinde-Chronik (PDF)</a>
+			; <a href= "https://www.seeboden.at/fileadmin/_migrated/content_uploads/Interview_mit_Burgstaller_Franz_Dr_02.pdf" target="_blank">Zeitzeuge (PDF)</a>
 			; <a href="https://www.doew.at/erinnern/fotos-und-dokumente/1934-1938/krachendes-oesterreich/opfer-des-terrors-der-ns-bewegung-in-oesterreich-1933-1938/johann-adam-seutter-loetzen" target="_blank">Dokumentationsarchiv des österreichischen Widerstandes</a></li>
 			
 			<li>Liselotte SEUTTER von LOETZEN (1904-1977): 
@@ -277,14 +272,14 @@
 			<a href="https://trauer.bz/traueranzeige/anna-seuttervonloetzen" target="_blank">Traueranzeige</a></li>
 			
 			<li>Wolfgang LIEBEN-SEUTTER (1934-2015) Dr.jur., Werbekaufmann: 
-			<a href="https://www.mediathek.at/katalogsuche/suche/detail/?pool=BWEB&uid=106733EB-02E-00302-0000011C-10666CE5&cHash=d1ada693d4758988fdb06e38af6af554" target="_blank">Interview "Die Familie Lieben" 1. Teil</a>
-			; <a href="https://www.mediathek.at/katalogsuche/suche/detail/?uid=145F89CB-017-000A9-000004AC-145EEE57" target="_blank">Interview "Die Familie Lieben" 2. Teil</a></li>	
+			<a href="https://www.mediathek.at/katalogsuche/suche/detail/?pool=BWEB&uid=106733EB-02E-00302-0000011C-10666CE5&cHash=d1ada693d4758988fdb06e38af6af554" target="_blank">Audio-Interview "Die Familie Lieben" 1. Teil</a>
+			; <a href="https://www.mediathek.at/katalogsuche/suche/detail/?uid=145F89CB-017-000A9-000004AC-145EEE57" target="_blank">Audio-Interview "Die Familie Lieben" 2. Teil</a></li>	
 			
 			<li>Christoph LIEBEN-SEUTTER (*1964) Intendant: 
 			<a href="https://de.wikipedia.org/wiki/Christoph_Lieben-Seutter" target="_blank">Wikipedia</a></li>	
 		</ul>
 
-		<h4>Zu den Von SEUTTER in den USA (Ast der Lindauer Linie)</h4>
+		<h4>Zu den Von SEUTTER in den USA (ein Ast der Lindauer Linie)</h4>
 		<ul>
 			<li>Elisaeus Von SEUTTER in Jackson, Mississippi (1827-1901) Juwelier und Photograph: 
 			<a href="https://en.wikipedia.org/wiki/E._von_Seutter" target="_blank">Wikipedia</a>
@@ -312,20 +307,6 @@
 			<li>Gottfried SEUTER (1717-1800) Maler und Kupferstecher: 
 			<a href="https://www.deutsche-biographie.de/sfz80089.html#adbcontent" target="_blank">Allg. Deutsche Biographie</a></li>
 		</ul>
-		
-		<!-- 
-		<h4>Namensträger, die nicht dem "historischen Adel" der S.v.L. angehören</h4>
-		<ul>	
-			<li>Claudia:
-			<a href="https://www.seutter-von-loetzen.de/" target="blank">Home Page</a>
-			; <a href="https://www.deutsche-digitale-bibliothek.de/person/gnd/136265502" target="blank">Claudia Curtius Seutter von Lötzen</a>
-			</li>
-			
-			<li>Sophie:
-			<a href="https://www.gelbeseiten.de/gsbiz/1f757a47-7275-441a-a828-acc69f2eded0" target="blank">Gelbe Seiten</a>
-			; <a href="https://www.zahnarzt-bogenhausen-herzogpark.de/" target="blank">Zahnärzte im Herzogpark München Bogenhausen</a></li>
-		</ul>
-		-->
 		
 	</main>
 	

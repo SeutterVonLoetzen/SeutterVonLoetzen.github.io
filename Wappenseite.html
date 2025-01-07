@@ -69,7 +69,7 @@
 		.galerie {margin-left:1.6rem; } 
 		.imgCont {vertical-align:top; display:inline-block; }
 		.small {height:9.0rem; width:auto; margin-right:1.0rem; display:inline-block;} 
-		.large {height:35rem; width:auto; display:none; } 
+		.large {height:35rem; width:auto; } 
 	</style>
 </head>
 
@@ -207,7 +207,8 @@
 			containers.forEach(container => {
 				// Get the file name from the 'data-filename' attribute  
 				const fileName = container.getAttribute('data-filename');
-					// If the file exists: create new elements, set the attributes and append to the container; else handle cases where no fileName is provided (optional) 
+					// If the file exists: create a new element and set the attributes; 
+					// else handle cases where no fileName is provided (optional) 
 					if (fileName) {						
 						const smallImage = document.createElement('img');
 							smallImage.src = fileName;
@@ -222,14 +223,14 @@
 							largeImage.style.display = 'none';  // Das große Bild initial verstecken
 						// Wenn das kleine Bild angeklickt wird, 
 						smallImage.addEventListener('click', function() {
-							// dann zuerst alle anderen großen Bilder ausblenden 
+							// dann zuerst alle großen Bilder ausblenden 
 							document.querySelectorAll('.large').forEach(img => img.style.display = 'none');
-							// und dann das entsprechende große Bild anzeigen
+							// und dann das gewünschte große Bild anzeigen
 							largeImage.style.display = 'block';});         
 						// Wenn das große Bild angeklickt wird, dann alle großen Bilder ausblenden 
 						largeImage.addEventListener('click', function() {
 							document.querySelectorAll('.large').forEach(img => img.style.display = 'none');});
-						// Die Bilder in den Container einfügen
+						// Zuletzt die Bilder in den Container einfügen
 						container.appendChild(smallImage);
 						container.appendChild(largeImage);
 					} else {container.textContent = "No fileName specified.";}
